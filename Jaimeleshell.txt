@@ -1,0 +1,81 @@
+{ ~ }  » cd                                                                                   ~ 1
+{ ~ }  » Jaime_le_shell                                                                         ~
+{ Jaime_le_shell }  » touch test1                                                ~/Jaime_le_shell
+{ Jaime_le_shell }  » mkdir test2                                                ~/Jaime_le_shell
+{ Jaime_le_shell }  » mkdir test3                                                ~/Jaime_le_shell
+{ Jaime_le_shell }  » mkdir test4                                                ~/Jaime_le_shell
+{ Jaime_le_shell }  » touch test5                                                ~/Jaime_le_shell
+{ Jaime_le_shell }  » mkdir test6                                                ~/Jaime_le_shell
+{ Jaime_le_shell }  » ls -l                                                      ~/Jaime_le_shell
+total 0
+-rw-rwxr--+ 1 dell None 0 Apr 23 14:57 test1
+drwxrwxr-x+ 1 dell None 0 Apr 23 14:57 test2
+drwxrwxr-x+ 1 dell None 0 Apr 23 15:00 test3
+drwxrwxr-x+ 1 dell None 0 Apr 23 15:00 test4
+-rw-rwxr--+ 1 dell None 0 Apr 23 15:00 test5
+drwxrwxr-x+ 1 dell None 0 Apr 23 15:00 test6
+{ Jaime_le_shell }  » mkdir le_shell_cest_trop_cool!                             ~/Jaime_le_shell
+le_shell_cest_trop_cool!  test1  test2  test3  test4  test5  test6
+{ Jaime_le_shell }  » cd                                                         ~/Jaime_le_shell
+{ ~ }  » le_shell_cest_trop_cool                                                                ~
+zsh: command not found: le_shell_cest_trop_cool
+{ ~ }  » cd                                                                                 ~ 127
+{ ~ }  » le_shell_cest_trop_cool!                                                               ~
+zsh: command not found: le_shell_cest_trop_cool!
+{ ~ }  » cd..                                                                               ~ 127
+zsh: command not found: cd..
+{ ~ }  » cd.                                                                                ~ 127
+zsh: command not found: cd.
+{ ~ }  » cd                                                                                 ~ 127
+{ ~ }  » le_shell_cest_trop_cool!                                                               ~
+zsh: command not found: le_shell_cest_trop_cool!
+{ ~ }  » Jaime_le_shell                                                                     ~ 127
+{ Jaime_le_shell }  » le_shell_cest_trop_cool!                                   ~/Jaime_le_shell
+{ le_shell_cest_trop_cool! }  » test1                   ~/Jaime_le_shell/le_shell_cest_trop_cool!
+zsh: command not found: test1
+{ le_shell_cest_trop_cool! }  » touch test1           ~/Jaime_le_shell/le_shell_cest_trop_cool! 2
+{ le_shell_cest_trop_cool! }  » touch test5             ~/Jaime_le_shell/le_shell_cest_trop_cool!
+{ le_shell_cest_trop_cool! }  » ls -l                   ~/Jaime_le_shell/le_shell_cest_trop_cool!
+total 0
+-rw-rwxr--+ 1 dell None 0 Apr 23 15:10 test1
+-rw-rwxr--+ 1 dell None 0 Apr 23 15:10 test5
+{ le_shell_cest_trop_cool! }  » mv -r ..                ~/Jaime_le_shell/le_shell_cest_trop_cool!
+mv: unknown option -- r
+Try 'mv --help' for more information.
+{ le_shell_cest_trop_cool! }  » cd                    ~/Jaime_le_shell/le_shell_cest_trop_cool! 1
+{ ~ }  » Jaime_le_shell                                                                         ~
+{ Jaime_le_shell }  » mv  test1                                                  ~/Jaime_le_shell
+mv: missing destination file operand after ‘test1’
+Try 'mv --help' for more information.
+{ Jaime_le_shell }  » mv../test1 ../le_shell_cest_trop_cool\!/test1            ~/Jaime_le_shell 1
+zsh: no such file or directory: mv../test1
+{ Jaime_le_shell }  »  mv../test1 ../le_shell_cest_trop_cool\!/test5         ~/Jaime_le_shell 127
+zsh: no such file or directory: mv../test1
+{ Jaime_le_shell }  » cd                                                     ~/Jaime_le_shell 127
+{ ~ }  » le_shell_cest_trop_cool                                                                ~
+zsh: command not found: le_shell_cest_trop_cool
+{ ~ }  » le_shell_cest_trop_cool!                                                           ~ 127
+zsh: command not found: le_shell_cest_trop_cool!
+{ ~ }  » cd                                                                                 ~ 127
+{ ~ }  » Jaime_le_shell                                                                         ~
+{ Jaime_le_shell }  » le_shell_cest_trop_cool!                                   ~/Jaime_le_shell
+{ le_shell_cest_trop_cool! }  » cp../test2              ~/Jaime_le_shell/le_shell_cest_trop_cool!
+ls
+cd
+zsh: no such file or directory: cp../test2
+{ le_shell_cest_trop_cool! }  » ls                  ~/Jaime_le_shell/le_shell_cest_trop_cool! 127
+test1  test5
+{ le_shell_cest_trop_cool! }  » cd                      ~/Jaime_le_shell/le_shell_cest_trop_cool!
+{ ~ }  » le_shell_cest_trop_cool!                                                               ~
+zsh: command not found: le_shell_cest_trop_cool!
+{ ~ }  » cd                                                                                 ~ 127
+{ ~ }  » Jaime_le_shell                                                                         ~
+{ Jaime_le_shell }  » le_shell_cest_trop_cool!                                   ~/Jaime_le_shell
+{ le_shell_cest_trop_cool! }  » cp../test2 ../le_shell_cest_trop_cool\!/test2
+zsh: no such file or directory: cp../test2
+{ le_shell_cest_trop_cool! }  » cp -r ../test2      ~/Jaime_le_shell/le_shell_cest_trop_cool! 127
+cp: missing destination file operand after ‘../test2’
+Try 'cp --help' for more information.
+{ le_shell_cest_trop_cool! }  » cp -r ../test2 ../le_shell_cest_trop_cool\!/test2
+{ le_shell_cest_trop_cool! }  » cp -r ../test6 ../le_shell_cest_trop_cool\!/test6
+{ le_shell_cest_trop_cool! }  » cp -r ../test2 ../le_shell_cest_trop_cool\!/test2                                           ~/Jaime_le_shell/le_shell_cest_trop_cool!
